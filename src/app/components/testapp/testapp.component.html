@@ -1,0 +1,71 @@
+
+
+
+
+<div class="main-content">
+
+
+
+
+	
+	<!-- loader wrapper -->
+<!-- 	<div class="preloader-wrap p-3">
+		<div class="box shimmer">
+			<div class="lines">
+				<div class="line s_shimmer"></div>
+				<div class="line s_shimmer"></div>
+				<div class="line s_shimmer"></div>
+				<div class="line s_shimmer"></div>
+			</div>
+		</div>
+		<div class="box shimmer mb-3">
+			<div class="lines">
+				<div class="line s_shimmer"></div>
+				<div class="line s_shimmer"></div>
+				<div class="line s_shimmer"></div>
+				<div class="line s_shimmer"></div>
+			</div>
+		</div>
+	</div> -->
+	<!-- loader wrapper -->
+
+	<div class="app-body p-4">
+		<div class="row">
+			<div class="col-sm-12 mb-4" style="position: fixed;z-index: 9999999;margin-top: -15px;margin-bottom: 15px;background-color: #fff;padding-top: 15px;">
+				<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%; height: 120px;">
+					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-1.svg" alt="cat" ><h4>Hortalizas</h4></a></div>
+					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-10.svg" alt="cat"><h4>Charcutería</h4></a></div>
+					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-2.svg" alt="cat"><h4>Víveres</h4></a></div>
+					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-7.svg" alt="cat"><h4>Huevos y Lácteos</h4></a></div>
+					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-3.svg" alt="cat"><h4>Bebidas y Licores</h4></a></div>
+					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-5.svg" alt="cat"><h4>Postres</h4></a></div>
+					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-6.svg" alt="cat"><h4>Aseo y limpieza</h4></a></div>
+                    <div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-11.svg" alt="cat"><h4>Panadería</h4></a></div>
+                    <div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-8.svg" alt="cat"><h4>Aseo Personal</h4></a></div>
+                    <div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-9.svg" alt="cat"><h4>MAscotas</h4></a></div>
+				</div>
+			</div>
+
+		 	<div class="col-sm-12">
+		 		<ul class="shop-item pl-0" style="margin-top: 120px;">
+					<li  *ngFor="let tix of tixs" >
+						<a    (click)="viewProduct(tix)" >
+							<img src="{{tix.images[0]}}" alt="banner" style="border-radius: 15px;">
+						</a>
+						<h4 style="font-size: 14px;">{{tix.productName}} </h4>
+
+						<span style="font-size: 15px;">BsS. {{tix.globalPrice  |  number:'1.0-0' }} </span>
+					</li>				 			
+		 		</ul>
+		 	</div>
+		</div>
+	</div>	
+</div>		
+<!-- 	<script type="text/javascript">
+$(document).ready(function() {
+            $('.shop-item .list-product').on('click', function() {
+                $('.chat-content').addClass('mobile-active');
+                return false;
+                });
+            }      
+    </script> -->
