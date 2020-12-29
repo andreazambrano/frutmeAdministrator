@@ -5,6 +5,8 @@ import { DataApiService } from "./services/data-api.service";
 import { ProductInfoService } from "./services/product-info.service";
 import { UserWService } from "./services/user-w.service";
 import { SwUpdate } from '@angular/service-worker';
+import { CategoryInterface } from './models/category-interface'; 
+
 
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
@@ -27,10 +29,17 @@ export class AppComponent implements OnInit {
 
  }
  loadAPI = null;  
+  public categorys:CategoryInterface;
  url="assets/assetsadmin/js/plugin.js";
  url2 = "assets/assetsadmin/js/main.js";
-    ngOnInit() {
 
+   getAllCategory(){
+    this.dataApi
+    .getAllCategory()
+    .subscribe((categorys: CategoryInterface) => (this._uw.categorys=categorys));
+  }
+    ngOnInit() {
+this.getAllCategory();
       if (this.swUpdate.isEnabled) {
             this.swUpdate.available.subscribe(() => {
                 if(confirm("adminshop tiene nuevas mejoras. desea cargar esta nueva versión?")) {

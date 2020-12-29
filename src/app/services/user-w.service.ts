@@ -16,6 +16,7 @@ export class UserWService {
 	car:any[]=[];
 	card:any={};
 	cardsResult:any[]=[];
+	categorys:any={};
 	currency:number=1;
 	editingTrek:boolean=false;
 	errorFormAffiliate:boolean;

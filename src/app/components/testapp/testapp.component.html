@@ -32,17 +32,19 @@
 	<div class="app-body p-4">
 		<div class="row">
 			<div class="col-sm-12 mb-4" style="position: fixed;z-index: 9999999;margin-top: -15px;margin-bottom: 15px;background-color: #fff;padding-top: 15px;">
-				<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%; height: 120px;">
-					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-1.svg" alt="cat" ><h4>Hortalizas</h4></a></div>
-					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-10.svg" alt="cat"><h4>Charcutería</h4></a></div>
-					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-2.svg" alt="cat"><h4>Víveres</h4></a></div>
-					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-7.svg" alt="cat"><h4>Huevos y Lácteos</h4></a></div>
-					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-3.svg" alt="cat"><h4>Bebidas y Licores</h4></a></div>
-					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-5.svg" alt="cat"><h4>Postres</h4></a></div>
-					<div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-6.svg" alt="cat"><h4>Aseo y limpieza</h4></a></div>
-                    <div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-11.svg" alt="cat"><h4>Panadería</h4></a></div>
-                    <div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-8.svg" alt="cat"><h4>Aseo Personal</h4></a></div>
-                    <div class="item"><a href="#"><img src="https://frutme.buckapi.com/assets/assetssuper/images/category/icon-9.svg" alt="cat"><h4>MAscotas</h4></a></div>
+				<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%; height: 90px;" >
+					<div class="item" *ngFor="let category of this._uw.categorys"><a href="#">
+						<img src="{{category.images[0]}}" >
+						<h4>{{category.Name}}</h4></a>
+					</div>
+					<!-- <div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-1.png" alt="cat" ><h4>Women</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-2.png" alt="cat"><h4>Men</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-3.png" alt="cat"><h4>Accessories</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-4.png" alt="cat"><h4>Shoes</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-5.png" alt="cat"><h4>Sunglass</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-6.png" alt="cat"><h4>Belt</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-1.png" alt="cat"><h4>Women</h4></a></div> -->
+					
 				</div>
 			</div>
 

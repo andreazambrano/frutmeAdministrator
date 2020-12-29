@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserWService } from "../../services/user-w.service";
 import { DataApiService } from '../../services/data-api.service';
 import { TixInterface } from '../../models/tix-interface'; 
+import { CategoryInterface } from '../../models/category-interface'; 
 
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
@@ -20,6 +21,7 @@ export class TestappComponent implements OnInit {
     public location: Location
      ) { }
   public tixs:TixInterface;
+  public categorys:CategoryInterface;
   loadAPI = null;  
 
 
@@ -31,6 +33,7 @@ export class TestappComponent implements OnInit {
     .getAllTixs()
     .subscribe((tixs: TixInterface) => (this.tixs=tixs));
   }
+
   public viewProduct(tix){
     console.log("ejecutado");
     let tixToView = tix;
@@ -61,6 +64,7 @@ export class TestappComponent implements OnInit {
 
   ngOnInit() {
         this.getAllTixs();
+         // this.getAllCategory();
     // this._uw.tixPreview.quantity=1;
         if (this._uw.loaded==true){
           this.loadAPI = new Promise(resolve => {
