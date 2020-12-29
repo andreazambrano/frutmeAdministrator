@@ -11179,7 +11179,7 @@ a:hover, a:focus {
 }
 .main-wrapper .navigation {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  position: sticky;
+  /*position: sticky;*/
   order: 2;
   z-index: 2;
 }
