@@ -2,11 +2,18 @@
 		<div class="container pl-0 pr-0">
 			<div class="nav-content">
 				<ul>
-					<li><a routerLink=""class="nav-content-bttn" data-tab="friends"><i class="ti-view-grid"></i></a></li>
+					<li [hidden]="router.url.includes('/blog') || router.url.includes('/order') || router.url.includes('/account') || router.url.includes('/detail')"><a routerLink=""class="nav-content-bttn" data-tab="friends"><i class="ti-view-grid" style="color:#ff0017" ></i></a></li>
+
+					<li [hidden]="!router.url.includes('/blog') || !router.url.includes('/order') || !router.url.includes('/account') || !router.url.includes('/detail')"><a routerLink=""class="nav-content-bttn" data-tab="friends"><i class="ti-view-grid"></i></a></li>
+
 					<li><a routerLink="blog" class="nav-content-bttn" data-tab="chats"><i class="ti-comments"></i></a></li>
+
 					<li [hidden]="router.url.includes('/blog') || router.url.includes('/order') || router.url.includes('/account') || router.url.includes('/detail')"><a  class="nav-content-bttn nav-center" data-tab="products"><i class="ti-plus"></i></a></li>
+					
 					<li [hidden]="!router.url.includes('/blog') || router.url.includes('/detail')"><a  class="nav-content-bttn nav-center"style="background-color: blue; color: green;" data-tab="blog"><i class="ti-plus"></i></a></li>
+					
 					<li><a routerLink="order" class="nav-content-bttn" data-tab="favorites"><i class="ti-package"></i></a></li>
+					
 					<li><a routerLink="account" data-tab="archived" class="nav-content-bttn "><i class="ti-user"></i></a></li>						
 				</ul>
 			</div>
