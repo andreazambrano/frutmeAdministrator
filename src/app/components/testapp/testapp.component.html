@@ -1,10 +1,4 @@
-
-
-
-
 <div class="main-content">
-
-
 
 
 	
@@ -31,19 +25,12 @@
 
 	<div class="app-body p-4">
 		<div class="row">
-			<div class="col-sm-12 mb-4" style="position: fixed;z-index: 9999999;margin-top: -15px;margin-bottom: 15px;background-color: #fff;padding-top: 15px;">
-				<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%; height: 106px;" *ngIf="this._uw.categorys[0]">
+			<div class="col-sm-12 mb-4" style="position: fixed;z-index: 9999999;margin-top: -15px;margin-bottom: 15px;background-color: #fff;padding-top: 15px; margin-left: -15px;">
+				<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%; height: 108px;" *ngIf="this._uw.categorys[0]">
 					<div class="item" *ngFor="let category of this._uw.categorys"><a href="#">
 						<img src="{{category.images[0]}}" style="max-width: 90px;">
 						<h4>{{category.Name}}</h4></a>
 					</div>
-					<!-- <div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-1.png" alt="cat" ><h4>Women</h4></a></div>
-								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-2.png" alt="cat"><h4>Men</h4></a></div>
-								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-3.png" alt="cat"><h4>Accessories</h4></a></div>
-								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-4.png" alt="cat"><h4>Shoes</h4></a></div>
-								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-5.png" alt="cat"><h4>Sunglass</h4></a></div>
-								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-6.png" alt="cat"><h4>Belt</h4></a></div>
-								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-1.png" alt="cat"><h4>Women</h4></a></div> -->
 					
 				</div>
 			</div>
