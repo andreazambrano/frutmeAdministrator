@@ -4,7 +4,7 @@
 				<ul>
 					<li [hidden]="router.url.includes('/blog') || router.url.includes('/order') || router.url.includes('/account') || router.url.includes('/detail')"><a routerLink=""class="nav-content-bttn" data-tab="friends"><i class="ti-view-grid" style="color:#ff0017" ></i></a></li>
 
-					<li [hidden]="!router.url.includes('/blog') || !router.url.includes('/order') || !router.url.includes('/account') || !router.url.includes('/detail')"><a routerLink=""class="nav-content-bttn" data-tab="friends"><i class="ti-view-grid"></i></a></li>
+					<li [hidden]="!router.url.includes('/') "><a routerLink=""class="nav-content-bttn" data-tab="friends"><i class="ti-view-grid"></i></a></li>
 
 					<li><a routerLink="blog" class="nav-content-bttn" data-tab="chats"><i class="ti-comments"></i></a></li>
 
