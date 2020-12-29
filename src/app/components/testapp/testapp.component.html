@@ -25,8 +25,8 @@
 
 	<div class="app-body p-4">
 		<div class="row">
-			<div class="col-sm-12 mb-4" style="position: fixed;z-index: 9999999;margin-top: -15px;margin-bottom: 15px;background-color: #fff;padding-top: 15px; ">
-				<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%; height: 108px;" *ngIf="this._uw.categorys[0]">
+			<div class="col-sm-12 mb-4" style="position: fixed;z-index: 9999999;margin-top: -15px;margin-bottom: 15px;background-color: #fff;padding-top: 15px; " *ngIf="this._uw.categorys[0]">
+				<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%; height: 108px;" >
 					<div class="item" *ngFor="let category of this._uw.categorys"><a href="#">
 						<img src="{{category.images[0]}}" style="max-width: 90px;">
 						<h4>{{category.Name}}</h4></a>
